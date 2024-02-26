@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <title>Costumer Satisfaction Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Costumer Satisfaction Survey</h1>
+        <p id="description">Your feedback is important. Please Answer the form below to help us provide better service.
+        </p>
+    </header>
+
+    <form id="survey-form">
+        <fieldset class="fieldset1">
+
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Name" required>
+
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
+
+            <label for="age" id="number-label">Age (optional)</label>
+            <input type="number" id="number" min="18" max="120" placeholder="Age">
+
+            <p>What is your current plan?</p>
+            <select id="dropdown">
+                <option disabled selected>Select your plan</option>
+                <option>Basic</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+                <option>Master</option>
+            </select>
+
+        </fieldset>
+        <fieldset class="fieldset2">
+
+            <p>How satisfied are you with the service?</p>
+
+            <label for="unsatisfied"><input type="radio" name="satisfaction" id="unsatisfied" value="unsatisfied"
+                    class="inline">
+                Unsatisfied
+            </label>
+            <label for="satisfied"><input type="radio" name="satisfaction" id="satisfied" value="satisfied"
+                    class="inline">
+                Satisfied
+            </label>
+            <label for="very_satisfied"><input type="radio" name="satisfaction" id="very_satisfied"
+                    value="very_satisfied" class="inline" checked>
+                Very satisfied
+            </label>
+
+            <p>Which of the following do you think we need to improve?</p>
+            <label><input type="checkbox" name="improve" id="" value="speed" class="inline">
+                Speed
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="layout" class="inline">
+                Layout
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="usability" class="inline">
+                Usability
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="prices" class="inline">
+                Prices
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="accessibility" class="inline">
+                Accessibility
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="coverage" class="inline">
+                Coverage
+            </label>
+            <label><input type="checkbox" name="improve" id="" value="promotions" class="inline">
+                Promotions
+            </label>
+
+            <p>Do you have any other suggestions?</p>
+            <textarea placeholder="Write your suggestions" rows="5" cols="60"></textarea>
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

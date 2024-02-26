@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(74, 102, 172);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 100%
+}
+
+#title,
+#description {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#description {
+    font-style: italic;
+}
+
+form {
+    background-color: rgb(32, 54, 109);
+    max-width: 700px;
+    min-width: 300px;
+    margin: auto;
+    border-radius: 1em;
+}
+
+
+fieldset {
+    border: none;
+    padding: 2rem 3rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    min-height: 2em;
+    border-radius: 0.5em;
+    border: 1px solid white;
+}
+
+textarea {
+    margin-bottom: 2em;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+}
+
+.fieldset1 input {
+    display: block;
+    margin: 1rem 0;
+}
+
+.fieldset1 label,
+.fieldset1 p,
+.fieldset2 p {
+    font-weight: bold;
+}
+
+.fieldset2 {
+    padding-top: 0;
+}
+
+.fieldset2 label {
+    display: block;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    height: 2em;
+    font-size: 1.1em;
+    color: white;
+    background-color: rgb(42, 140, 86);
+    border: none;
+    margin: 0 auto;
+}
